@@ -1,0 +1,193 @@
+/** paleta de colores**/
+:root {
+    --oscuro: #101B35;
+    --celeste-oscuro: #92A1B6;
+    --celeste: #C4CDDF;
+    --claro: #E2E8F0;
+    --background: #0d1424;
+    --tabla: #090d16;
+}
+
+
+
+
+/** Decoracion general del fondo**/
+body {
+    font-family: __inter_20b187, __inter_Fallback_20b187, ui-sans-serif, system-ui,
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    height: 100%;
+    overflow: hidden;
+}
+
+.cursor {
+    max-width: 100%;
+    max-height: 100%;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 300px rgba(145, 160, 182, 0.1);
+    background-image: radial-gradient(circle, rgba(145, 160, 182, 0.1) 0%, rgba(145, 160, 182, 0.001) 100%);
+    z-index: -1;
+}
+
+
+
+
+/** contenedor principal**/
+.datos {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+/** todo esto es lado izquierdo**/
+.izquierdo {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.nombre {
+    margin-top: 10%;
+    margin-right: 30%;
+    color: var(--celeste);
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.pais {
+    color: var(--claro);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.correo {
+    color: var(--celeste-oscuro);
+    font-size: 15px;
+    line-height: 0px;
+}
+
+img {
+    width: 150px;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 6.5%;
+    border-radius: 20%;
+}
+
+.arriba {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    margin-top: -0.5%;
+    margin-left: 20%;
+    overflow: auto;
+}
+
+.contacto {
+    margin-top: 0%;
+    margin-left: 10%;
+}
+
+.github {
+    width: 30px;
+    height: 30px;
+    margin-left: 0%;
+    margin-top: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/** Todo esto es lado derecho**/
+.derecho {
+    margin-top: -0.5%;
+    color: var(--celeste-oscuro);
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: -2;
+    height: 100%;
+}
+
+.info-texto {
+    margin-left: 10%;
+    margin-right: 20%;
+    z-index: 1;
+}
+
+.educacion {
+    margin-top: 0%;
+    color: var(--celeste);
+    font-size: 25px;
+    line-height: 25px;
+    z-index: 1;
+}
+
+b {
+    color: var(--celeste);
+}
+
+.tabla {
+    z-index: 1;
+    padding: 8px;
+    max-width: 100%;
+}
+
+td {
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.refs {
+    z-index: 1;
+    margin-left: 9.5%;
+}
+
+.titulos {
+    color: var(--claro);
+    background-color: var(--tabla);
+}
+
+tr {
+
+    background-color: rgba(215, 20, 64, 0.2);
+}
+
+.referencias {
+    z-index: 1;
+    margin-top: 0%;
+    color: var(--celeste);
+    font-size: 25px;
+    margin-left: 9.5%;
+}
+
+.trabajo {
+    margin-top: 0%;
+    color: var(--celeste);
+    font-size: 25px;
+}
+
+.capacitaciones {
+    margin-top: 0%;
+    color: var(--celeste);
+    font-size: 25px;
+}
