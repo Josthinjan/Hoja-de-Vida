@@ -19,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background);
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -31,7 +31,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    border-radius: 50%;
+    border-radius: 50vh;
     box-shadow: 0px 0px 300px rgba(145, 160, 182, 0.1);
     background-image: radial-gradient(circle, rgba(145, 160, 182, 0.1) 0%, rgba(145, 160, 182, 0.001) 100%);
     z-index: -1;
@@ -47,7 +47,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -55,62 +55,66 @@ body {
 
 /** todo esto es lado izquierdo**/
 .izquierdo {
-    width: 40%;
-    padding: 20px;
+    margin-top: 5vh;
+    margin-right: 15vh;
+    width: 80vh;
+    padding: 5vh;
     box-sizing: border-box;
 }
 
 .nombre {
-    margin-top: 10%;
-    margin-right: 30%;
     color: var(--celeste);
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 4vh;
+    line-height: 4vh;
 }
 
 .pais {
     color: var(--claro);
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 2vh;
+    line-height: 1vh;
 }
 
 .correo {
     color: var(--celeste-oscuro);
-    font-size: 15px;
-    line-height: 0px;
+    font-size: 2vh;
+    line-height: 0vh;
 }
 
-img {
-    width: 150px;
-    height: 200px;
-    margin-left: 10%;
-    margin-top: 6.5%;
+.foto {
+    width: 24vh;
+    height: 32vh;
+    margin-left: 2vh;
+    margin-top: 0%;
+    max-width: 100%;
     border-radius: 20%;
 }
 
 .arriba {
     display: grid;
-    grid-template-columns: 30% 70%;
-    width: 100%;
-    margin-top: -0.5%;
-    margin-left: 20%;
-    overflow: auto;
+    grid-template-columns: 23vh 50vh;
+    width: 100vh;
+    margin-top: 0vh;
+    margin-left: 15vh;
 }
 
 .contacto {
-    margin-top: 0%;
-    margin-left: 10%;
+    margin-top: 0vh;
+    margin-left: 5vh;
+    padding: 1vh;
 }
 
 .github {
-    width: 30px;
-    height: 30px;
-    margin-left: 0%;
-    margin-top: 2%;
+    width: 4vh;
+    height: 4vh;
+    margin-left: 0vh;
+    margin-top: 0vh;
+    max-width: 100%;
 }
 
 a {
+    padding: 0vh;
     text-decoration: none;
+    margin-top: 1vh;
 }
 
 
@@ -118,27 +122,27 @@ a {
 
 /** Todo esto es lado derecho**/
 .derecho {
-    margin-top: -0.5%;
+    margin-top: 25vh;
     color: var(--celeste-oscuro);
-    width: 60%;
-    padding: 20px;
+    font-size: 2vh;
+    width: 100vh;
+    padding: 5vh;
     box-sizing: border-box;
-    padding: 20px;
     z-index: -2;
-    height: 100%;
+    height: 100vh;
 }
 
 .info-texto {
-    margin-left: 10%;
-    margin-right: 20%;
+    margin-left: 5vh;
+    margin-right: 10vh;
     z-index: 1;
 }
 
 .educacion {
-    margin-top: 0%;
+    margin-top: 0vh;
     color: var(--celeste);
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 4vh;
+    line-height: 3vh;
     z-index: 1;
 }
 
@@ -148,18 +152,22 @@ b {
 
 .tabla {
     z-index: 1;
-    padding: 8px;
-    max-width: 100%;
+    padding: 1vh;
+    max-width: 100vh;
+    max-height: 100vh;
 }
 
 td {
-    border: 2px solid #000;
-    border-radius: 5px;
+    max-width: 60vh;
+    max-height: 10vh;
+    border: 0.1vh solid #000;
+    border-radius: 1vh;
 }
 
 .refs {
     z-index: 1;
-    margin-left: 9.5%;
+    margin-left: 3.5vh;
+    padding: 0vh;
 }
 
 .titulos {
@@ -168,26 +176,72 @@ td {
 }
 
 tr {
-
+    font-size: 2vh;
     background-color: rgba(215, 20, 64, 0.2);
 }
 
 .referencias {
     z-index: 1;
-    margin-top: 0%;
+    margin-top: 0vh;
     color: var(--celeste);
-    font-size: 25px;
-    margin-left: 9.5%;
+    font-size: 4vh;
+    line-height: 3vh;
+    margin-left: 4vh;
 }
 
 .trabajo {
-    margin-top: 0%;
+    margin-top: 0vh;
     color: var(--celeste);
-    font-size: 25px;
+    font-size: 4vh;
+    line-height: 3vh;
+
 }
 
 .capacitaciones {
-    margin-top: 0%;
+    margin-top: 0vh;
     color: var(--celeste);
-    font-size: 25px;
+    font-size: 4vh;
+    line-height: 3vh;
+}
+
+@media screen and (max-width:767px) {
+    .datos {
+        display: grid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vh;
+    }
+
+    body {
+        font-family: __inter_20b187, __inter_Fallback_20b187, ui-sans-serif, system-ui,
+            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+            "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        margin: 0vh;
+        padding: 5vh;
+        background-color: var(--background);
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    .izquierdo {
+        margin-top: 5vh;
+        margin-right: 15vh;
+        width: 80vh;
+        padding: 5vh;
+        box-sizing: border-box;
+        margin-left: 60vh;
+    }
+
+    .derecho {
+        margin-top: 5vh;
+        color: var(--celeste-oscuro);
+        font-size: 2vh;
+        width: 100vh;
+        padding: 5vh;
+        box-sizing: border-box;
+        z-index: -2;
+        height: 100vh;
+    }
 }
